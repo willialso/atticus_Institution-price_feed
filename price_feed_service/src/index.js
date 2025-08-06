@@ -483,6 +483,9 @@ async function updateMarketData(symbol, data) {
 
 // Health check endpoint
 async function startHealthCheck() {
+  // Temporarily disable health check server for Render deployment
+  logger.info("🏥 Health check server disabled for Render deployment");
+  return;
   const express = await import('express');
   const app = express.default();
   
