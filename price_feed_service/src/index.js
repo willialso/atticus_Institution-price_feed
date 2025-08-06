@@ -571,4 +571,4 @@ process.on('SIGTERM', () => {
 main().catch(error => {
   logger.error('❌ Failed to start Price Feed Service:', error);
   process.exit(1);
-}); 
+}); // Render deployment fix
